@@ -19,7 +19,7 @@ void main() {
       print("CLIK");
     },
       child: const Text("anjay"),
-    backgroundColor: Colors.red[600],
+    backgroundColor: Colors.blue[600],
      ),
     ),
   ));
