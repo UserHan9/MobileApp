@@ -18,13 +18,8 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
 
-      body: const Center(
-          child: Text(
-            "WELCOME",
-            style: TextStyle(
-              fontSize: 50,
-            ),
-          ),
+      body:  Center(
+          child: Image.asset('assets/home.jpg')
       ),
 
 
