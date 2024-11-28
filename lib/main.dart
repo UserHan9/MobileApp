@@ -24,3 +24,29 @@ void main() {
     ),
   ));
 }
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("halo"),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+
+      body: const Center(
+          child: Text(
+            "WELCOME",
+            style: TextStyle(
+              fontSize: 100,
+            ),
+          ),
+      ),
+
+
+    );
+  }
+}
