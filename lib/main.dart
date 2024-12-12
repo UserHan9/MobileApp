@@ -2,27 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(
-    home: Home(), 
+    home: FirstCard(), 
   ));
 }
 
-class Home extends StatelessWidget {
-  const Home({super.key});
+class FirstCard extends StatelessWidget {
+  const FirstCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: const Text("halo"),
+        title: const Text("Haloo"),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.grey[850],
+        elevation: 0.0, 
       ),
-
-      body:  Center(
-          child: Image.asset('assets/home.jpg')
-      ),
-
-
     );
   }
 }
