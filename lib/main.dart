@@ -23,6 +23,17 @@ class FirstCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget> [
+            Center(
+              child: CircleAvatar(
+                backgroundImage: AssetImage('profile.jpeg'),
+                radius: 40.0,
+              ),
+            ),
+
+            Divider(
+              height: 50.0,
+            ),
+
             Text("HAHA",
             style: TextStyle(
               color: Colors.grey,
@@ -61,7 +72,24 @@ class FirstCard extends StatelessWidget {
               ),
             ),
 
-          SizedBox(height: 30.0,)
+          SizedBox(height: 30.0,),
+
+          Row(
+            children: <Widget> [
+              Icon(
+                Icons.add_home_work_sharp,
+                color: Colors.grey,
+              ),
+              SizedBox(width: 10.0,),
+                Text("CIPER",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 10.0,
+                  letterSpacing: 1.0,
+                ),
+              )
+            ],
+          )
 
           ],
         ),
